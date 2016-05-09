@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+var React = require('react');
+
+function ${TM_FILENAME/(.+)\..+|.*/$1/:name} (props){
+	return (
+		<div>${1:Content}</div>
+	)
+}
+
+module.exports = ${TM_FILENAME/(.+)\..+|.*/$1/:name};
+]]></content>
+	<tabTrigger>rslc</tabTrigger>
+	<scope>source.js</scope>
+	<description>react stateless component</description>
+</snippet>
